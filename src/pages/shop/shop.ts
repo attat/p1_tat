@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { BuyoutPage } from '../buyout/buyout';
 import { ShopPage } from '../shop/shop';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the ShopPage page.
@@ -17,15 +18,21 @@ import { ShopPage } from '../shop/shop';
 })
 export class ShopPage {
 
- goToBuyout()
+ goToBuyoutMilk()
    {
-      this.navCtrl.push(homePage);
+      this.navCtrl.push(BuyoutPage, {item:"milk"});
    }
 
- randomFunc()
- {
-   echo "what is going on";
- }
+  goToBuyoutCookies()
+     {
+        this.navCtrl.push(BuyoutPage, {item:"cookies"});
+     }
+
+     goToBuyout()
+     {
+        this.navCtrl.push(BuyoutPage, {item: "Nothing"});
+     }
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
   }

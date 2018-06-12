@@ -14,16 +14,16 @@
 
 
 <ion-content padding>
-  <button ion-button icon-start>
+  <button ion-button icon-start (click)="goToBuyoutMilk()">
     <ion-icon name="star"></ion-icon>
     Milk
   </button>
 
-  <button ion-button icon-start>
+  <button ion-button icon-start (click)="goToBuyoutCookies()">
     <ion-icon name="star"></ion-icon>
     Cookies
   </button>
-  <button ion-button icon-start (click)="goToBuyoutgit()">
+  <button ion-button icon-start (click)="goToBuyout(BuyoutPage)">
     <ion-icon name="star"></ion-icon>
     Buyout
   </button>
